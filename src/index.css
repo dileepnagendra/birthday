@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA8C2C;
+}
+
+.bg-love {
+  /* Noisy red love background */
+  background-color: #7a0010;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 50% 50%, #b30020 0%, #3a0005 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.paper-texture {
+  /* Deep rich red with a paper texture overlay */
+  background-color: #5c0000;
+  background-image: 
+    linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(0,0,0,0.7)),
+    url("https://www.transparenttextures.com/patterns/cream-paper.png");
+  box-shadow: 
+    0 20px 50px rgba(0,0,0,0.8), 
+    inset 0 0 60px rgba(0,0,0,0.8),
+    0 0 0 1px rgba(255, 229, 92, 0.4);
+}
+
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #d40000, #6a0000);
+  box-shadow: 
+    0 10px 20px rgba(0,0,0,0.6),
+    inset 0 0 15px rgba(0,0,0,0.9),
+    inset 0 3px 5px rgba(255,255,255,0.3);
+  border: 1px solid #4a0000;
+}
+
+.text-gold {
+  color: #FFE55C;
+  background: linear-gradient(to bottom, #FFF8D6, #FFE55C, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 15px rgba(255, 229, 92, 0.4), 0px 4px 5px rgba(0,0,0,0.8);
+}
+
+.text-gold-solid {
+  color: #FFE55C;
+  text-shadow: 0px 2px 10px rgba(255, 229, 92, 0.5), 0px 2px 4px rgba(0,0,0,0.9);
+}
+
+.text-gold-light {
+  color: #FFF4D2;
+  text-shadow: 0px 2px 10px rgba(255, 244, 210, 0.5), 0px 2px 4px rgba(0,0,0,0.9);
+}
+
